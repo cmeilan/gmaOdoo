@@ -1,0 +1,297 @@
+
+.o_form_view.o_form_nosheet.o_base_settings {
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  padding: 0px;
+}
+.o_base_settings {
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .o_base_settings {
+    -ms-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
+}
+.o_base_settings .o_control_panel .o_panel {
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-bottom: 12px;
+  width: 100%;
+}
+.o_base_settings .o_control_panel .o_panel .title,
+.o_base_settings .o_control_panel .o_panel .o_setting_search {
+  -ms-flex: 1 0 auto;
+  -moz-flex: 1 0 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  flex: 1 0 auto;
+  width: 240px;
+}
+.o_base_settings .o_control_panel .o_panel .o_setting_search {
+  position: relative;
+}
+.o_base_settings .o_control_panel .o_panel .o_setting_search .searchInput {
+  height: 28px;
+  padding: 0px;
+  border: 0px;
+  border-bottom: 1px solid #d9d7d7;
+  border-color: #555555;
+  box-shadow: none;
+  font-weight: 500;
+}
+.o_base_settings .o_control_panel .o_panel .o_setting_search .searchIcon {
+  position: absolute;
+  top: 4px;
+  left: auto;
+  bottom: auto;
+  right: 0;
+  color: #555555;
+}
+.o_base_settings .o_control_panel .o_form_statusbar {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.o_base_settings .o_control_panel .o_form_statusbar .oe_highlight,
+.o_base_settings .o_control_panel .o_form_statusbar .oe_link {
+  padding: 5px 10px;
+}
+.o_base_settings .o_control_panel .o_form_statusbar .oe_link {
+  color: #7c7bad;
+}
+.o_base_settings .o_control_panel .o_form_statusbar .oe_link:hover,
+.o_base_settings .o_control_panel .o_form_statusbar .oe_link:focus,
+.o_base_settings .o_control_panel .o_form_statusbar .oe_link.focus {
+  color: #555487;
+}
+.o_base_settings .o_setting_container {
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow: auto;
+}
+@media (max-width: 767px) {
+  .o_base_settings .o_setting_container {
+    -ms-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
+}
+.o_base_settings .o_setting_container .settings_tab {
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex: 0 0 auto;
+  -moz-flex: 0 0 auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -ms-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  background: #333333;
+  overflow: auto;
+  padding-top: 8px;
+}
+@media (max-width: 767px) {
+  .o_base_settings .o_setting_container .settings_tab {
+    -ms-flex: 0 0 40px;
+    -moz-flex: 0 0 40px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 40px;
+    flex: 0 0 40px;
+    display: -ms-inline-flexbox;
+    display: -moz-inline-box;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+  }
+}
+.o_base_settings .o_setting_container .settings_tab .selected {
+  background-color: #222222;
+  box-shadow: inset 3px 0 0 #7c7bad;
+}
+.o_base_settings .o_setting_container .settings_tab .selected .app_name {
+  color: white;
+}
+.o_base_settings .o_setting_container .settings_tab .tab {
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0 32px 0 16px;
+  height: 40px;
+  color: #d9d7d7;
+  font-size: 13px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.o_base_settings .o_setting_container .settings_tab .tab .icon {
+  width: 23px;
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .o_base_settings .o_setting_container .settings_tab .tab {
+    display: block;
+    position: absolute;
+    top: auto;
+    left: 100%;
+    bottom: auto;
+    right: auto;
+    width: auto;
+    height: 40px;
+    padding: 10px 16px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: inherit;
+    -webkit-transition: 0.2s all ease 0s;
+    -moz-transition: 0.2s all ease 0s;
+    -o-transition: 0.2s all ease 0s;
+    transition: 0.2s all ease 0s;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .o_base_settings .o_setting_container .settings_tab .tab .app_name {
+    display: block;
+    white-space: nowrap;
+  }
+  .o_base_settings .o_setting_container .settings_tab .tab:after {
+    content: '';
+    background: #7c7bad;
+    opacity: 0;
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    -webkit-transition: 0.2s all ease 0s;
+    -moz-transition: 0.2s all ease 0s;
+    -o-transition: 0.2s all ease 0s;
+    transition: 0.2s all ease 0s;
+  }
+  .o_base_settings .o_setting_container .settings_tab .tab.previous,
+  .o_base_settings .o_setting_container .settings_tab .tab.before {
+    left: -3%;
+  }
+  .o_base_settings .o_setting_container .settings_tab .tab.current {
+    left: 50%;
+    color: white;
+    box-shadow: none;
+    background: none;
+  }
+  .o_base_settings .o_setting_container .settings_tab .tab.current:after {
+    opacity: 1;
+  }
+  .o_base_settings .o_setting_container .settings_tab .tab.next,
+  .o_base_settings .o_setting_container .settings_tab .tab.after {
+    left: 103%;
+  }
+}
+.o_base_settings .o_setting_container .settings {
+  position: relative;
+  -ms-flex: 1 1 100%;
+  -moz-flex: 1 1 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  flex: 1 1 100%;
+  background-color: white;
+  overflow: auto;
+}
+.o_base_settings .o_setting_container .settings > .app_settings_block h2 {
+  margin-bottom: 0;
+  padding: 5px 16px;
+  background-color: #F9F9F9;
+  font-size: 15px;
+  font-weight: bold;
+}
+@media (min-width: 1200px) {
+  .o_base_settings .o_setting_container .settings > .app_settings_block h2 {
+    padding-left: 32px;
+  }
+}
+.o_base_settings .o_setting_container .settings > .app_settings_block h2:first-of-type {
+  margin-top: 10px!important;
+}
+.o_base_settings .o_setting_container .settings > .app_settings_block .o_settings_container {
+  max-width: 992px;
+  padding: 0 16px;
+}
+@media (min-width: 1200px) {
+  .o_base_settings .o_setting_container .settings > .app_settings_block .o_settings_container {
+    padding-left: 32px;
+  }
+}
+.o_base_settings .o_setting_container .settings .settingSearchHeader {
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin: 30px 0 10px;
+  padding: 5px 16px;
+  background-color: #F9F9F9;
+}
+@media (min-width: 1200px) {
+  .o_base_settings .o_setting_container .settings .settingSearchHeader {
+    padding-left: 32px;
+  }
+}
+.o_base_settings .o_setting_container .settings .settingSearchHeader .icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.o_base_settings .o_setting_container .settings .settingSearchHeader .appName {
+  color: inherit;
+  font-size: 17px;
+}
+.o_base_settings .o_setting_container .settings .notFound {
+  color: #777777;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 50px;
+}
+.o_base_settings .o_setting_container .settings .highlighter {
+  background: yellow;
+}
+.o_base_settings .o_setting_container .d-block {
+  display: block!important;
+}

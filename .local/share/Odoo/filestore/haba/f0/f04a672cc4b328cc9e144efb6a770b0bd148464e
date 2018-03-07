@@ -1,0 +1,44 @@
+
+/**
+ * This file regroups the rules which apply on elements which are shared between
+ * all renderers. For field default rules, see the fields.less file.
+ */
+.o_view_manager_content > div {
+  height: 100%;
+}
+.oe_view_nocontent a {
+  cursor: pointer;
+}
+.oe_view_nocontent span,
+.oe_view_nocontent a {
+  display: inline!important;
+}
+.o_field_widget .oe_view_nocontent,
+.o_cannot_create .oe_view_nocontent_create {
+  display: none;
+}
+.o_invisible_modifier {
+  display: none!important;
+}
+.o_status {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 6px;
+  vertical-align: middle;
+  background-color: #E5E5E5;
+}
+.o_status.o_status_green {
+  background-color: #5cb85c;
+}
+.o_status.o_status_red {
+  background-color: #d9534f;
+}
+.o_btn-link-as-button {
+  padding: 2px;
+  font-size: 12px;
+}
+.o_btn-link-as-button > a {
+  margin-bottom: -4px !important;
+  margin-left: 3px;
+}

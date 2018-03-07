@@ -1,0 +1,203 @@
+
+.o_list_view {
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+  margin-bottom: 0px;
+}
+.o_list_view.table td,
+.o_list_view.table th {
+  vertical-align: middle;
+}
+.o_list_view thead {
+  color: #4c4c4c;
+  border-bottom: 1px solid #cacaca;
+}
+.o_list_view thead > tr > th {
+  border-left: 1px solid #dfdfdf;
+}
+.o_list_view thead > tr > th:not(.o_column_sortable):hover {
+  cursor: default;
+}
+.o_list_view tfoot {
+  cursor: default;
+  color: #4c4c4c;
+  background-color: #eee;
+  font-weight: bold;
+  border-top: 2px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
+}
+.o_list_view .o_column_sortable {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.o_list_view .o_column_sortable::after {
+  margin-left: 6px;
+  position: absolute;
+  font-family: FontAwesome;
+  content: "\f0d7";
+  opacity: 0;
+}
+.o_list_view .o_column_sortable.o-sort-up {
+  cursor: n-resize;
+}
+.o_list_view .o_column_sortable.o-sort-up::after {
+  content: "\f0d7";
+}
+.o_list_view .o_column_sortable.o-sort-down {
+  cursor: s-resize;
+}
+.o_list_view .o_column_sortable.o-sort-down::after {
+  content: "\f0d8";
+}
+.o_list_view .o_column_sortable:hover::after {
+  opacity: 0.3;
+}
+.o_list_view .o_column_sortable.o-sort-up,
+.o_list_view .o_column_sortable.o-sort-down {
+  color: inherit;
+}
+.o_list_view .o_column_sortable.o-sort-up::after,
+.o_list_view .o_column_sortable.o-sort-down::after {
+  opacity: 1;
+}
+.o_list_view .o_list_record_selector,
+.o_list_view .o_list_record_delete,
+.o_list_view .o_handle_cell {
+  width: 1px;
+}
+.o_list_view .text-bf {
+  font-weight: bold;
+}
+.o_list_view .text-it {
+  font-style: italic;
+}
+.o_list_view .text-muted {
+  color: #919191;
+}
+.o_list_view tbody > tr.o_group_header {
+  height: 31px;
+}
+.o_list_view tbody > tr.o_group_header .o_group_name {
+  white-space: nowrap;
+}
+.o_list_view tbody > tr.o_group_header .o_group_pager {
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: right;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.o_list_view tbody > tr.o_group_header .o_group_pager .o_pager_previous,
+.o_list_view tbody > tr.o_group_header .o_group_pager .o_pager_next {
+  background-color: #fbfbfa;
+}
+.o_list_view tbody > tr.o_group_header .o_group_pager .o_pager_previous:hover,
+.o_list_view tbody > tr.o_group_header .o_group_pager .o_pager_next:hover {
+  background-color: #e2e2e0;
+}
+.o_list_view tbody > tr.o_group_header > td.oe_number {
+  text-align: right;
+}
+.o_list_view tbody + tbody {
+  border-top: none;
+}
+.o_list_view .o_list_number {
+  text-align: right;
+  white-space: nowrap;
+}
+.o_list_view .o_list_text {
+  white-space: pre-wrap;
+}
+.o_list_view .o_data_cell.o_invisible_modifier {
+  display: table-cell !important;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) {
+  position: relative;
+  z-index: 1;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) > .o_field_widget {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: 0;
+  min-height: 100%;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) > .o_field_widget:not(.o_field_text) {
+  white-space: nowrap;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) > .o_field_widget.o_field_many2manytags > .badge,
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) > .o_field_widget.o_field_many2manytags > .badge > .o_badge_text {
+  white-space: normal;
+  max-width: 100%;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) > .o_field_translate {
+  position: absolute;
+  top: 0;
+  left: auto;
+  bottom: auto;
+  right: 5px;
+  width: 16px;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) .o_input {
+  padding: 5px;
+  background-color: white;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) .o_input .o_input {
+  padding: 0!important;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) .o_input_dropdown {
+  min-height: 100%;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) .o_field_monetary input {
+  width: 0;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) .o_field_boolean {
+  position: relative!important;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) .o_field_widget {
+  min-width: 0;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) .o_input_dropdown > .o_input,
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) .o_datepicker > .o_input {
+  padding-right: 15px;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) .o_input_dropdown > .o_dropdown_button,
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) .o_datepicker > .o_dropdown_button,
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) .o_input_dropdown .o_datepicker_button,
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) .o_datepicker .o_datepicker_button {
+  position: absolute;
+  top: 20%;
+  left: auto;
+  bottom: auto;
+  right: 5px;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) .o_field_widget > .o_external_button {
+  padding: 0;
+  background-color: inherit;
+  margin-left: 3px;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) .o_row_handle {
+  visibility: hidden;
+}
+.o_list_view .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) .o_field_boolean {
+  width: auto!important;
+}
+.o_list_buttons .o_list_button_save,
+.o_list_buttons .o_list_button_discard {
+  display: none;
+}
+.o_list_buttons.o-editing .o_list_button_add {
+  display: none;
+}
+.o_list_buttons.o-editing .o_list_button_save,
+.o_list_buttons.o-editing .o_list_button_discard {
+  display: inline-block;
+}

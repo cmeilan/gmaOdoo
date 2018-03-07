@@ -1,0 +1,51 @@
+
+div.o_checkbox {
+  display: inline-block;
+  vertical-align: sub;
+}
+div.o_checkbox > input + span {
+  display: none;
+}
+[type="text"],
+[type="password"],
+[type="number"],
+textarea,
+select {
+  width: 100%;
+  display: block;
+  outline: none;
+}
+.o_input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 2px 4px;
+  color: #1f1f1f;
+}
+.o_input .o_input {
+  border: none!important;
+  padding: 0;
+}
+select {
+  background: white;
+}
+.o_loading {
+  position: fixed;
+  top: 0;
+  right: 50%;
+  padding: 4px 12px;
+  background-color: #875A7B;
+  color: white;
+  text-align: center;
+  border-top: none;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+#oe_main_menu_navbar .oe_user_menu_placeholder .o_user_menu .oe_topbar_name {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  max-width: 150px;
+}

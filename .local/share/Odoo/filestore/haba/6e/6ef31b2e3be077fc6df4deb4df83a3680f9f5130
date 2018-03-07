@@ -1,0 +1,331 @@
+
+.o_kanban_view.o_kanban_dashboard {
+  -ms-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record {
+  position: relative;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+@media (max-width: 767px) {
+  .o_kanban_view.o_kanban_dashboard .o_kanban_record {
+    margin-bottom: 10px;
+  }
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .container {
+  width: 100%;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_manage_toggle_button {
+  margin: -1px -1px auto auto;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-bottom: none;
+  vertical-align: top;
+  color: #4c4c4c;
+  height: 35px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_manage_toggle_button:hover {
+  color: inherit;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_manage_toggle_button:focus,
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_manage_toggle_button:active,
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_manage_toggle_button:focus:active {
+  outline: none;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane {
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 13px;
+  text-align: left;
+  background-color: white;
+  border: 1px solid #ccc;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+  box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: auto;
+  right: -1px;
+  margin-top: -1px;
+  border-color: #d9d7d7;
+  top: 34px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.pull-right {
+  right: 0;
+  left: auto;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane .divider {
+  height: 1px;
+  margin: 8px 0;
+  overflow: hidden;
+  background-color: #E5E5E5;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #4c4c4c;
+  white-space: nowrap;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane .o_inline_dropdown {
+  position: relative;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane .o_inline_dropdown > .dropdown-menu {
+  top: 0;
+  left: 100%;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane .o_inline_dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane > div:not(.o_project_kanban_colorpicker) {
+  padding: 3px 0 3px 20px;
+  visibility: visible;
+  margin-bottom: 5px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane > .o_kanban_card_manage_section {
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 10px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane > .o_kanban_card_manage_section > div {
+  padding: 0;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane > .o_kanban_card_manage_section > div > a {
+  margin: auto auto auto -20px;
+  padding: 3px 20px;
+  color: #4c4c4c;
+  display: block;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane > .o_kanban_card_manage_section > div > a:hover {
+  background-color: #E5E5E5;
+  color: inherit;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane > .o_kanban_card_manage_section > div:last-child {
+  margin-bottom: 5px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container {
+  width: 95%;
+  max-width: 400px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container .row {
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container div[class*="col-"] {
+  -ms-flex: 1 1 3333.33333333%;
+  -moz-flex: 1 1 3333.33333333%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 3333.33333333%;
+  flex: 1 1 3333.33333333%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container div[class*="col-"] > .o_kanban_card_manage_title {
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container div[class*="col-"] > .o_kanban_card_manage_title small,
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container div[class*="col-"] > .o_kanban_card_manage_title .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777777;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container div[class*="col-"] > .o_kanban_card_manage_title small,
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container div[class*="col-"] > .o_kanban_card_manage_title .small {
+  font-size: 75%;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container div[class*="col-"] > div:not(.o_kanban_card_manage_title) {
+  padding: 0;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container div[class*="col-"] > div:not(.o_kanban_card_manage_title) > a {
+  margin: auto auto auto -5px;
+  padding: 3px 5px;
+  color: #4c4c4c;
+  display: block;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container div[class*="col-"] > div:not(.o_kanban_card_manage_title) > a:hover {
+  background-color: #E5E5E5;
+  color: inherit;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container div[class*="col-"] > div:not(.o_kanban_card_manage_title):last-child {
+  margin-bottom: 5px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container .row.o_kanban_card_manage_settings {
+  border-top: 1px solid #E5E5E5;
+  padding-top: 15px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container .row.o_kanban_card_manage_settings .oe_kanban_colorpicker {
+  max-width: none;
+  padding: 0;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container .row.o_kanban_card_manage_settings div[class*="col-"] + div[class*="col-"] {
+  border-left: 1px solid #E5E5E5;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container .row.o_kanban_card_manage_settings div.text-right {
+  text-align: left;
+  padding: 0;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container .row.o_kanban_card_manage_settings div.text-right > a {
+  margin: auto auto auto 0;
+  padding: 3px 0;
+  color: #4c4c4c;
+  display: block;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container .row.o_kanban_card_manage_settings div.text-right > a:hover {
+  background-color: #E5E5E5;
+  color: inherit;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container .row.o_kanban_card_manage_settings div.text-right:last-child {
+  margin-bottom: 5px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_manage_pane.container .row.o_kanban_card_manage_settings div.text-right > a {
+  margin-left: 40px;
+  padding-left: 20px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record.o_dropdown_open .o_kanban_card_manage_pane {
+  display: block;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record.o_dropdown_open .o_kanban_manage_toggle_button {
+  position: relative;
+  background: white;
+  border-color: #d9d7d7;
+  z-index: 1001;
+  position: absolute;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_primary {
+  padding-right: 32px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_header_title .o_primary,
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_primary_left .o_primary > span:first-child,
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .oe_kanban_content > .o_title > h3 {
+  color: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: block;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_primary_left .o_primary > span:nth-child(2) > strong {
+  font-weight: 500;
+  font-size: 12px;
+  color: #777777;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record.o_has_icon .o_primary {
+  padding-left: 12px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_content {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 80px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_header + .container.o_kanban_card_content {
+  -ms-flex: 1 0 auto;
+  -moz-flex: 1 0 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  flex: 1 0 auto;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding-right: 0;
+  padding-left: 0;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_header + .container.o_kanban_card_content::before,
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_header + .container.o_kanban_card_content::after {
+  content: normal;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_header + .container.o_kanban_card_content a {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_header + .container.o_kanban_card_content .o_kanban_primary_bottom {
+  margin-top: 8px;
+  margin-bottom: -8px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_header + .container.o_kanban_card_content .o_kanban_primary_bottom.bottom_block {
+  border-top: 1px solid #E5E5E5;
+  background-color: #F9F9F9;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.o_kanban_view.o_kanban_dashboard .o_kanban_record .o_dashboard_graph {
+  overflow: hidden;
+  margin: 16px -16px;
+}
+.o_kanban_view.o_kanban_dashboard .o_favorite,
+.o_kanban_view.o_kanban_dashboard .o_kanban_manage_toggle_button {
+  position: absolute;
+  top: 0;
+  left: auto;
+  bottom: auto;
+  right: 0;
+  padding: 8px;
+}
+.o_kanban_view.o_kanban_dashboard .o_favorite {
+  left: 0;
+  right: auto;
+}
+.o_kanban_view.o_kanban_dashboard.o_emphasize_colors .o_kanban_record::after {
+  width: 6px;
+}
