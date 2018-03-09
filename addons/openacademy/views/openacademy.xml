@@ -91,7 +91,7 @@
                                 <field name="start_date"/>
                                 <field name="duration"/>
                                 <field name="seats"/>
-
+                                <field name="taken_seats" widget="progressbar"/>
                         </group>
                         <label for="attendee_ids"/>
                         <field name="attendee_ids"/>
@@ -110,6 +110,7 @@
                 <tree string="Session Tree">
                     <field name="name"/>
                     <field name="course_id"/>
+                    <field name="taken_seats" widget="progressbar"/>
                 </tree>
             </field>
         </record>
@@ -124,6 +125,7 @@
                 <tree string="Course Tree">
                     <field name="name"/>
                     <field name="responsible_id"/>
+
                 </tree>
             </field>
         </record>
